@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <style>
+    /* CSS Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: purple;
+      color: #fff;
+      padding: 20px;
+    }
+
+    header nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    header nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    header nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    #hero {
+      background-color:drakblue;
+      background-size: fit;
+      text-align: center;
+      padding: 100px ;
+      border-radius: 10px;
+    }
+ #heo{
+   
+padding: 50px;
+}
+    #hero h2 {
+      font-size: 40px;
+    }
+
+    #hero p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: purple;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    #about,
+    #services,
+    #contact, 
+    #shop{
+      padding: 50px;
+    }
+
+    .service {
+      margin-bottom: 20px;
+    }
+
+    .services-container {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .service-item {
+      text-align: center;
+    }
+
+    .service-item img {
+      max-width: 70%;
+      height: 190px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: purple;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+    #backgroundImage {
+           position:absolute;
+            top: 152px;
+            left: 0;
+            width:100%;
+            height:80%;
+            object-fit: cover;
+            opacity: 0.8; /* Adjust the image opacity as needed */
+            }
+
+
+  </style>
+</head>
+<body>
+     
+  <header>
+    <h1>Welcome to Our Website</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+         <li><a href="#shop">Shop</a></li>
+      </ul>
+    </nav>
+  </header>
+<img id="backgroundImage" src="F:\GAYATRI\ACA - 2-2\intern\codesoft\pictures_of_web\back1.jpg" >
+  <section id="hero">
+   <h2 text-colour="drakblack">Discover Amazing Products</h2>
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+ <section id="shop">
+   <h1 text-align: center>Shop now and get exclusive discounts!</h1>
+    <a href="#"><button type="submit"  class="btn" text-align: center >Shop Now</button></a>
+</section>
+  <section id="about">
+   <h2>About Us</h2>
+    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac risus vel libero volutpat condimentum.</h4>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services-container">
+      <div class="service-item">
+        <img src="F:\GAYATRI\ACA - 2-2\intern\codesoft\pictures_of_web\graphc-design.jpg" alt="Service 1">
+        <h3>Web Design</h3>
+        <p>We offer custom web design services tailored to your needs.</p>
+      </div>
+      <div class="service-item">
+        <img src="F:\GAYATRI\ACA - 2-2\intern\codesoft\pictures_of_web\web.jpg" alt="Service 2">
+        <h3>Graphic Design</h3>
+        <p>Our graphic design services include logo design, branding, and more.</p>
+      </div>
+      <div class="service-item">
+        <img src="F:\GAYATRI\ACA - 2-2\intern\codesoft\pictures_of_web\seo.jpg" alt="Service 3">
+        <h3>SEO Optimization</h3>
+        <p>We help improve your website's visibility and ranking on search engines.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Your Company. All rights reserved.</p>
+  </footer>
+</body>
+</html>

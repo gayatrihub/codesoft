@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colorful Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url('F:/GAYATRI/ACA - 2-2/intern/codesoft/pictures_of_web/claci.jpg');
+       
+      background-size: cover;
+      background-position: center;
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+    }
+    .calculator {
+      width: 300px;
+      border: 2px solid #333;
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: gray; /* Added a transparent white background */
+     
+    }
+    .screen {
+      width: calc(100% - 20px); /* Adjusting the width */
+      height: 50px;
+      text-align: right;
+      background-color:#333;
+      color:white;
+      font-size: 24px;
+      padding: 10px;
+    }
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 5px;
+      padding: 10px;
+    }
+    .button {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color:black;
+      color: #fff;
+      font-size: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      width: 100%; /* Adjusting the width */
+    }
+    .button:hover {
+      background-color: #555;
+    }
+    .button.operator {
+      background-color: SlateBlue;
+    }
+    .button.clear {
+      background-color: #f44336;
+    }
+    .button.equal {
+      background-color: #2196f3;
+      grid-column: span 2;
+    }
+  </style>
+</head>
+<body>
+   <div class="calculator">
+    <div class="screen" id="screen">0</div>
+    <div class="buttons">
+      <div class="button" onclick="addToScreen('7')">7</div>
+      <div class="button" onclick="addToScreen('8')">8</div>
+      <div class="button" onclick="addToScreen('9')">9</div>
+      <div class="button operator" onclick="addToScreen('/')">/</div>
+      <div class="button" onclick="addToScreen('4')">4</div>
+      <div class="button" onclick="addToScreen('5')">5</div>
+      <div class="button" onclick="addToScreen('6')">6</div>
+      <div class="button operator" onclick="addToScreen('*')">*</div>
+      <div class="button" onclick="addToScreen('1')">1</div>
+      <div class="button" onclick="addToScreen('2')">2</div>
+      <div class="button" onclick="addToScreen('3')">3</div>
+      <div class="button operator" onclick="addToScreen('-')">-</div>
+      <div class="button" onclick="addToScreen('0')">0</div>
+      <div class="button" onclick="addToScreen('.')">.</div>
+      <div class="button clear" onclick="clearScreen()">C</div>
+      <div class="button operator" onclick="addToScreen('+')">+</div>
+    </div>
+    <div class="buttons">
+      <div class="button equal" onclick="calculate()">=</div>
+    </div>
+  </div>
+
+  <script>
+    let screen = document.getElementById('screen');
+    let expression = '';
+
+    function addToScreen(value) {
+      if (screen.textContent === '0' && value !== '.') {
+        screen.textContent = '';
+      }
+      screen.textContent += value;
+      expression += value;
+    }
+
+    function clearScreen() {
+      screen.textContent = '0';
+      expression = '';
+    }
+
+    function calculate() {
+      try {
+        let result = eval(expression);
+        screen.textContent = result;
+        expression = result.toString();
+      } catch (error) {
+        screen.textContent = 'Error';
+      }
+    }
+  </script>
+</body>
+</html>
