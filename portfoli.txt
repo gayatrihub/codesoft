@@ -67,13 +67,13 @@
 </head>
 <body>
     <header>
-        <h1>John Doe</h1>
+        <h1>Reddy Gayatri</h1>
         <p>Web Developer</p>
     </header>
 
     <section id="about">
         <h2>About Me</h2>
-        <img src="F:\GAYATRI\ACA - 2-2\intern\codesoft\pictures_of_web\profile.jpg" alt="John Doe">
+        <img src="F:\GAYATRI\ACA - 2-2\intern\codesoft\pictures_of_web\profile.jpg" alt="Reddy Gayatri">
         <p>I am a passionate web developer with expertise in HTML, CSS, and JavaScript. I enjoy creating responsive and user-friendly websites.</p>
     </section>
 
